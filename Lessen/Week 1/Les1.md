@@ -21,7 +21,12 @@ Bekijk wat je wil gaan bouwen als eindopdracht voor MRB. Alles uitzoeken. Welke 
 
 #### Ideeen
 Levitating Ball /w Fan: https://www.youtube.com/watch?v=k0yTh2D-ypQ
-> Needed: Fan, Plastic Tube, Ping Pong Ball, Microcontroller, 
+> Needed: Fan, Plastic Tube, Ping Pong Ball, Microcontroller, Ultrasone sensor
+Prijs:
+Sensor: 3,95 https://hackerstore.nl/Artikel/95
+Fan: 2,20 https://hackerstore.nl/Artikel/679
+Bal: 7,95 https://www.amazon.nl/dp/B085DFDJGH/?coliid=I2EPODGTOTH0YK&colid=1MBKFAFAJHAIB&psc=1&ref_=lv_ov_lig_dp_it
+PVC Buis: 9,40 https://www.pvc24.nl/shop/transparante-pvc-buis-50-cm-1/
 
 
 # Voorbereiding

@@ -1,0 +1,147 @@
+%!TeX program = xelatex
+\documentclass[fleqn]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{datetime}
+%\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[object=vectorian]{pgfornament}
+\usepackage{lastpage}
+\usepackage{fontspec}
+\usepackage{tikzpagenodes}
+\usepackage{stackengine}
+\setstackEOL{\\}
+\usepackage{geometry}
+\setmainfont{GFSArtemisia.otf}
+
+% Settings
+\newcommand\class{MRB}
+\newcommand\classSubject{Herhaling Basiselectronica}
+\newcommand\user{Vincent van Setten}
+\newcommand\week{Week 2}
+\newcommand\lecturer{Marius Versteegen}
+
+% Theming
+\oddsidemargin = 2pt
+\geometry{
+    top=3in,
+    inner=0.5in,
+    outer=0.5in,
+    bottom=1in,
+    headheight=7ex,
+    headsep=6ex
+}
+\definecolor{hublue}{RGB}{35, 136, 196}
+\definecolor{hured}{RGB}{214, 30, 37}
+
+\titleformat*{\section}{\Large\bfseries\fontfamily{cmr}\selectfont\color{hublue} }
+
+%% Don't Touch  %%
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+
+\newpagestyle{hubanner}{
+
+\headrule
+\sethead{}{
+\Huge\fontfamily{cmr}\selectfont\color{white}\sectiontitle 
+    }{}
+}
+\pagestyle{hubanner}
+
+
+\begin{document} 
+
+\renewcommand\makeheadrule{%
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[hublue] 
+  (-4,0) 
+    rectangle
+  (25, 20);
+\end{tikzpicture}}
+
+\begin{titlepage} 
+
+{\fontfamily{cmr}\selectfont
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+	
+	\center
+	
+	%------------------------------------------------
+	%	Headings
+	%------------------------------------------------
+	
+	\textsc{\LARGE HU University of Applied Sciences Utrecht}\\[1.5cm] 
+	
+	\textsc{\Large \class}\\[0.5cm] 
+	
+	\textsc{\large \week}\\[0.5cm]
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\HRule\\[0.4cm]
+	
+	{\huge\bfseries \classSubject}\\[0.4cm] % Title of your document
+	
+	\HRule\\[1.5cm]
+	
+	%------------------------------------------------
+	%	Author(s)
+	%------------------------------------------------
+	
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft}
+			\large
+			\textit{Student}\\
+			\user % Your name
+		\end{flushleft}
+	\end{minipage}
+	~
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushright}
+			\large
+			\textit{Teacher}\\
+			\lecturer % Supervisor's name
+		\end{flushright}
+	\end{minipage}
+	
+	%------------------------------------------------
+	%	Date
+	%------------------------------------------------
+	
+	\vfill\vfill\vfill % Position the date 3/4 down the remaining page
+	
+	{\large\monthyeardate\today}% Date, change the \today to a set date if you want to be precise
+	
+	%------------------------------------------------
+	%	Logo
+	%------------------------------------------------
+	
+	\vfill
+	\vfill
+	 \includegraphics[width=0.2\textwidth]{../images/hu.png}
+	%----------------------------------------------------------------------------------------
+	
+     }
+\end{titlepage}
+
+%% DO TOUCH %%
+\tableofcontents
+
+\chapter{Introduction}
+Het vak \class gaat over de basis van regeltechniek.  
+
+\chapter{Electronica Recap}
+\section{Basis}
+De hoogte van het water is de spanning. Deze energie komt vrij als je het water naar beneden laat vallen. Als het water
+valt kun je iets doen met die energie. 
+
+
+
+\end{document}
